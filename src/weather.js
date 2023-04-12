@@ -42,7 +42,7 @@ function displayWeather(response) {
 }
 
 let apiKey = "111a1c0ab68d74f7b1599be07028366e";
-let city = "Wyoming";
+let city = "Meraux";
 let units = "Metric";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${units}`;
 

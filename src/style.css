@@ -15,8 +15,10 @@ body {
 }
 .weather {
   padding: 20px;
-  border: 1px solid green;
+  border: 1px solid silver;
   border-radius: 5px;
+  background: transparent;
+  box-shadow: 10px 10px 5px 0px rgba(209, 204, 204, 0.75);
 }
 
 overview {
@@ -81,4 +83,13 @@ h1 {
 
 .weather-temp .weather-temp-min {
   opacity: 0.5;
+}
+
+.note a {
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+small {
+  font-weight: 600;
 }
