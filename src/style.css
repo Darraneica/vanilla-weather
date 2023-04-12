@@ -1,3 +1,6 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 .container {
   max-width: 720px;
   padding: 30px;
@@ -33,6 +36,10 @@ li {
   font-size: 16px;
   font-weight: 100;
   line-height: 19px;
+}
+
+li::first-letter {
+  text-transform: capitalize;
 }
 
 h1 {

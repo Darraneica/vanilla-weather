@@ -11,6 +11,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Vanilla Weather</title>
   </head>
@@ -37,17 +38,16 @@
          
               </form>
         <div class="overview">
-            <h1 id="city">Jackson</h1>
+            <h1 id="city"></h1>
             <ul>
-                <li>Last Updated: <span>10 minutes ago</span></li>
+                <li>Last Updated: <span id="date"></span></li>
             </ul>
           
           <div class="row">
             <div class="col-6">
               <div class="weather-conditions">
                 <ul>
-                  <li id="date">Wednesday 10:50</li>
-                  <li id="condition">Sunny</li>
+                  <li id="conditions"></li>
                 </ul>
               </div>
             </div>
@@ -60,20 +60,20 @@
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/076/702/original/sunny.png?1681314844"
           id="icon" class="d-flex">
           <div class="d-flex">
-            <strong id="temperature">75</strong>
-            <span id="units">°C</span>
+            <strong id="temperature"></strong>
+            <span id="units">°C | <a href="#">°F </a></span>
           </div>
           </div>
           </div>
-          <div class="col-6">
+          <div class="col-6" id="small-dets">
               <ul>
-                <li>Humidity: <span id="humidity">%</span></li>
-                <li>Wind: <span id="wind">km/h</span></li>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
               </ul>
             </div>
           </div>
           <div class="forecast">
-            <div class="row">
+            <div class="row" id="forecast-border">
                 <div class="col-2">
                     <div class="weather-date">Tues</div>
                     <div class="weather-temp">
