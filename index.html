@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="root">
+      <div class="app">
+        <div class="container">
+          <div class="weather">
+            <form action="">
+              <div class="row">
+                <div class="col-3 p-0">
+                  <input type="search" class="search-input" placeholder="Enter a city..." />
+                </div>
+                <div>
+                  <input
+                    type="submit"
+                    class="btn btn-primary w-120"
+                    id="btn"
+                    value="Search"
+                  />
+                </div>
+              </div>
+            </form>
+            <div class="weather-info">
+              <div class="row">
+                <div class="col-9">
+                  <h1 id="city">San Francisco</h1>
+                  <ul>
+                    <li><span id="date">Date</span></li>
+                    <li id="conditions">Weather Condition</li>
+                    <li id="humidity">Humidity</li>
+                    <li id="wind">Wind</li>
+                  </ul>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-8">
+                    <div class="termperate-container d-flex justify-content-end">
+                <canvas width="52" height="52">
+                    <div>
+                        <span class="temperature">14</span>
+                        <span class="unit">°C</span>
+                    </div>
+              </div>
+            </div>
+          </div>
+            </div>
+          <div class="weather-forecast row">
+            <div class="col">
+                <div class="weather-forecast-preview">
+                    <div class="forecast-time">Tues</div>
+                        <canvas width="38" height="38"></canvas>
+                        <div class="forecast-temp">
+                            <span class="forecast-temp-max">
+                                15°
+                            </span>
+                            <span class="forecast-temp-min">
+                                9°
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="weather-forecast-preview">
+                    <div class="forecast-time">Wed</div>
+                        <canvas width="38" height="38"></canvas>
+                        <div class="forecast-temp">
+                            <span class="forecast-temp-max">
+                                13°
+                            </span>
+                            <span class="forecast-temp-min">
+                                8°
+                            </span>
+                </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="weather-forecast-preview">
+                    <div class="forecast-time">Thur</div>
+                        <canvas width="38" height="38"></canvas>
+                        <div class="forecast-temp">
+                            <span class="forecast-temp-max">
+                                14°
+                            </span>
+                            <span class="forecast-temp-min">
+                                8°
+                            </span>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+      <div class="weather-forecast-preview">
+                    <div class="forecast-time">Fri</div>
+                        <canvas width="38" height="38"></canvas>
+                        <div class="forecast-temp">
+                            <span class="forecast-temp-max">
+                                13°
+                            </span>
+                            <span class="forecast-temp-min">
+                                8°
+                            </span>
+    </div>
+      </div>
+      </div>
+          <div class="col">
+          <div class="weather-forecast-preview">
+                    <div class="forecast-time">Sat</div>
+                        <canvas width="38" height="38"></canvas>
+                        <div class="forecast-temp">
+                            <span class="forecast-temp-max">
+                                13°
+                            </span>
+                            <span class="forecast-temp-min">
+                                8°
+                            </span>
+                        </div>
+          </div>
+        </div>
+      </div>
+    <footer>This project was coded by <a href="#">Darraneica</a> and is <a href="#">open-sourced on GitHub</a> and <a href="#">hosted on Netlify.</a></footer>
+      </div>
+    </div>
+</div>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+#root {
+  box-sizing: border-box;
+  display: block;
+}
+
+.app {
+  margin: 60px auto;
+  max-width: 800px;
+}
+.weather {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
+  color: #878787;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 40px;
+}
+
+.search-input {
+  background: #f9f7fe;
+  border: none;
+  border-radius: 6px;
+  color: rgba(39, 33, 66, 0.4);
+  display: inline-block;
+  font-size: 16px;
+  height: 50px;
+  line-height: 20px;
+  padding: 15px 20px;
+  width: 300px;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+.col-3 {
+  flex: 0 0 auto;
+  width: 25%;
+}
+
+#btn {
+  background: #885df1;
+  border: none;
+  font-size: 16px;
+  height: 50px;
+  padding: 15px 0;
+  margin-left: 153px;
+  width: 100%;
+}
+
+.weather-info {
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+#city {
+  color: #272142;
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 48px;
+  margin: 20px 0 10px;
+}
+
+li {
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  margin-bottom: 5px;
+}
+.temperature {
+  color: #212121;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 1;
+  margin-left: 10px;
+}
+.unit {
+  color: #212121;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 1;
+  margin-left: 10px;
+}
+.weather-forecast {
+  border-bottom: 1px solid #f9f7fe;
+  margin: 40px 0;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.forecast-time {
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.forecast-temp {
+  color: plum;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+footer {
+  color: rgba(38, 34, 33, 0.5);
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+#date,
+#conditions,
+#wind,
+#humidity {
+  top: -10px;
+  padding-top: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
