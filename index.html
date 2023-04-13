@@ -11,7 +11,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Vanilla Weather</title>
   </head>
@@ -19,53 +19,57 @@
     <div class="container">
       <div class="weather-wrapper">
         <div class="weather">
-        <div class="search-form">
-          <div class="row">
-            <div class="col-9">
-              <form action="">
-                <input type="search" class="search-input" 
-                autocomplete="off"
-                autofocus="on" 
-                placeholder="Enter a city..." />
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  class="form-control"
+                  id="form-input"
+                  autocomplete="off"
+                  autofocus="on"
+                  placeholder="Enter a city..."
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-primary w-100"
+                />
+              </div>
             </div>
-            <div class="col-3">
-                <input type="submit" 
-                value="Search" 
-                class="btn btn-primary w-100">
-            </div>
-            </div>   
-         </div>  
-         
-              </form>
-        <div class="overview">
-            <h1 id="city"></h1>
-            <ul>
-                <li>Last Updated: <span id="date"></span></li>
-            </ul>
-          
-          <div class="row">
-            <div class="col-6">
-              <div class="weather-conditions">
+          </form>
+          <div class="overview">
+            <div class="row">
+              <div class="col-9">
+                <h1 id="city"></h1>
                 <ul>
-                  <li id="conditions"></li>
+                  <li>Last Updated: <span id="date"></span></li>
                 </ul>
               </div>
             </div>
+            <div class="row">
+              <div class="col-6">
+                <div class="weather-conditions">
+                  <ul>
+                    <li id="conditions"></li>
+                  </ul>
+                </div>
+              </div>
             </div>
-        </div>
-        <div class="row">
-          <div class="col-6">
-            <div class="d-flex weather-description" id="weather-details">
-                 <img
-            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/076/702/original/sunny.png?1681314844"
-          id="icon" class="d-flex">
-          <div class="d-flex">
-            <strong id="temperature"></strong>
-            <span id="units">°C | <a href="#">°F </a></span>
           </div>
-          </div>
-          </div>
-          <div class="col-6" id="small-dets">
+          <div class="row">
+            <div class="col-6">
+              <div class="d-flex weather-description" id="weather-details">
+                <img src="" alt="" id="icon" class="d-flex" />
+                <div class="d-flex">
+                  <strong id="temperature"></strong>
+                  <span id="units">°C | <a href="#">°F </a></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6" id="small-dets">
               <ul>
                 <li>Humidity: <span id="humidity"></span>%</li>
                 <li>Wind: <span id="wind"></span> km/h</li>
@@ -74,54 +78,68 @@
           </div>
           <div class="forecast">
             <div class="row" id="forecast-border">
-                <div class="col-2">
-                    <div class="weather-date">Tues</div>
-                    <div class="weather-temp">
-                        <span class="weather-temp-max">89°</span>
-                        <span class="weather-temp-min">54°</span>
-                    </div>
+              <div class="col-2">
+                <div class="weather-date">Tues</div>
+                <img src="" alt="" id="forecast-img" />
+                <div class="weather-temp">
+                  <span class="weather-temp-max">89°</span>
+                  <span class="weather-temp-min">54°</span>
                 </div>
-                <div class="col-2">
-                    <div class="weather-date">Wed</div>
-                    <div class="weather-temp">
-                        <span class="weather-temp-max">89°</span>
-                        <span class="weather-temp-min">33°</span>
-                    </div>
+              </div>
+              <div class="col-2">
+                <div class="weather-date">Wed</div>
+                <img src="" alt="" id="forecast-img" />
+                <div class="weather-temp">
+                  <span class="weather-temp-max">89°</span>
+                  <span class="weather-temp-min">33°</span>
                 </div>
-                <div class="col-2">
-                    <div class="weather-date">Thu</div>
-                    <div class="weather-temp">
-                    <span class="weather-temp-max">76°</span>
-                    <span class="weather-temp-min">44°</span>
+              </div>
+              <div class="col-2">
+                <div class="weather-date">Thu</div>
+                <img src="" alt="" id="forecast-img" />
+                <div class="weather-temp">
+                  <span class="weather-temp-max">76°</span>
+                  <span class="weather-temp-min">44°</span>
                 </div>
-            </div>
-            
-            <div class="col-2">
+              </div>
+
+              <div class="col-2">
                 <div class="weather-date">Fri</div>
+                <img src="" alt="" id="forecast-img" />
                 <div class="weather-temp">
-                <span class="weather-temp-max">78°</span>
-                <span class="weather-temp-min">33°</span>
-            </div>
-            </div>
-            <div class="col-2">
+                  <span class="weather-temp-max">78°</span>
+                  <span class="weather-temp-min">33°</span>
+                </div>
+              </div>
+              <div class="col-2">
                 <div class="weather-date">Sat</div>
+                <img src="" alt="" id="forecast-img" />
                 <div class="weather-temp">
-                    <span class="weather-temp-max">89°</span>
-                    <span class="weather-temp-min">66°</span>
+                  <span class="weather-temp-max">89°</span>
+                  <span class="weather-temp-min">66°</span>
                 </div>
-            </div>
-            <div class="col-2">
+              </div>
+              <div class="col-2">
                 <div class="weather-date">Sun</div>
+                <img src="" alt="" id="forecast-img" />
                 <div class="weather-temp">
-                    <span class="weather-temp-max">77°</span>
-                    <span class="weather-temp-min">33°</span>
+                  <span class="weather-temp-max">77°</span>
+                  <span class="weather-temp-min">33°</span>
                 </div>
+              </div>
             </div>
           </div>
         </div>
+        <small class="note"
+          ><a
+            href="https://github.com/Darraneica/vanilla-weather"
+            target="_blank"
+            >Open-source code</a
+          >
+          by Darraneica Robinson</small
+        >
+      </div>
     </div>
-    <small class="note"><a href="https://github.com/Darraneica/vanilla-weather" target="_blank">Open-source code</a> by Darraneica Robinson</small>
-</div>
   </body>
   <script src="src/weather.js"></script>
 </html>

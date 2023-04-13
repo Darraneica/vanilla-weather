@@ -51,10 +51,6 @@ h1 {
   line-height: 28px;
   margin-bottom: 0;
 }
-/** search details **/
-.search-input {
-  width: 100%;
-}
 
 .weather-description img {
   margin-right: 5px;
@@ -92,4 +88,5 @@ h1 {
 
 small {
   font-weight: 600;
+  margin-left: 20px;
 }
