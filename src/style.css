@@ -90,3 +90,11 @@ small {
   font-weight: 600;
   margin-left: 20px;
 }
+
+.weather-description .active {
+  color: black;
+}
+
+.weather-description .active:hover {
+  text-decoration: none;
+}
