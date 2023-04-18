@@ -79,56 +79,25 @@
               </ul>
             </div>
           </div>
-          <div class="forecast">
-            <div class="row" id="forecast-border">
-              <div class="col-2">
-                <div class="weather-date">Thu</div>
-                <img src="" alt="" id="forecast-img" />
-                <div class="weather-temp">
-                  <span class="weather-temp-max">89°</span>
-                  <span class="weather-temp-min">54°</span>
-                </div>
+          <div class="weather-forecast" id="forecast">
+            <div class="col-2">
+              <div class="weather-forecast-date">
+                ${formatDay(forecastDay.dt)}
               </div>
-              <div class="col-2">
-                <div class="weather-date">Fri</div>
-                <img src="" alt="" id="forecast-img" />
-                <div class="weather-temp">
-                  <span class="weather-temp-max">89°</span>
-                  <span class="weather-temp-min">33°</span>
-                </div>
-              </div>
-              <div class="col-2">
-                <div class="weather-date">Sat</div>
-                <img src="" alt="" id="forecast-img" />
-                <div class="weather-temp">
-                  <span class="weather-temp-max">76°</span>
-                  <span class="weather-temp-min">44°</span>
-                </div>
-              </div>
-
-              <div class="col-2">
-                <div class="weather-date">Sun</div>
-                <img src="" alt="" id="forecast-img" />
-                <div class="weather-temp">
-                  <span class="weather-temp-max">78°</span>
-                  <span class="weather-temp-min">33°</span>
-                </div>
-              </div>
-              <div class="col-2">
-                <div class="weather-date">Mon</div>
-                <img src="" alt="" id="forecast-img" />
-                <div class="weather-temp">
-                  <span class="weather-temp-max">89°</span>
-                  <span class="weather-temp-min">66°</span>
-                </div>
-              </div>
-              <div class="col-2">
-                <div class="weather-date">Tues</div>
-                <img src="" alt="" id="forecast-img" />
-                <div class="weather-temp">
-                  <span class="weather-temp-max">77°</span>
-                  <span class="weather-temp-min">33°</span>
-                </div>
+              <img
+                src="http://openweathermap.org/img/wn/${
+            forecastDay.weather[0].icon
+          }@2x.png"
+                alt=""
+                width="42"
+              />
+              <div class="weather-forecast-temperatures">
+                <span class="weather-forecast-temperature-max"
+                  >${Math.round( forecastDay.temp.max )}°</span
+                >
+                <span class="weather-forecast-temperature-min"
+                  >${Math.round( forecastDay.temp.min )}°</span
+                >
               </div>
             </div>
           </div>

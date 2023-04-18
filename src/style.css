@@ -98,3 +98,13 @@ small {
 .weather-description .active:hover {
   text-decoration: none;
 }
+
+.weather-forecast-temperature-min {
+  color: grey;
+  font-weight: 900;
+}
+
+.weather-forecast-temperature-max {
+  color: black;
+  font-weight: 900;
+}
